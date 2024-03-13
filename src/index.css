@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Amiri' ;
+    src: url('./fonts/Al-Mushaf.ttf');
+}
+body{
+    font-family: "Amiri";
+    background-image: url('../public/imgs/istockphoto-1383966318-640x640.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+.box{
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    background-color: #ffffff69;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+}
+.box span {
+    line-height: 70px;
+}
+
+@media screen and (max-width:1024px) {
+    .main{
+        width: 100% !important;
+    }
+    .box{
+        padding: 10px;
+    }
+    .box span{
+        font-size: 32px;
+        line-height: 50px;
+    }
+}
